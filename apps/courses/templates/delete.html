@@ -1,0 +1,18 @@
+<h1>Are you sure you want to delete the following course?</h1>
+<table>
+<tbody>
+	<tr>
+		<td>Name:</td>
+		<td>{{name}}</td>
+	</tr>
+	<tr>
+		<td>Description:</td>
+		<td>{{description}}</td>
+	</tr>
+</tbody>
+</table>
+<a href="/">No</a>
+<form action="/process_del" method="delete">
+	<input type="hidden" name="{{id}}">
+	<input type="submit" value="Yes! I want to delete this">
+</form>
